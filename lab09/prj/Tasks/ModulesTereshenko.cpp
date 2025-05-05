@@ -5,7 +5,6 @@
 
 using namespace std;
 
-// ===== Задача 9.1 =====
 double calculateElectricityBill(double kilowatts) {
     if (kilowatts <= 150) {
         return kilowatts * 0.3084;
@@ -16,7 +15,6 @@ double calculateElectricityBill(double kilowatts) {
     }
 }
 
-// ===== Допоміжна функція для 9.2 =====
 int getBeaufortScale(double wind) {
     if (wind < 0.3) return 0;
     if (wind < 1.6) return 1;
@@ -45,13 +43,11 @@ int getMinBeaufortScale(const double windSpeeds[], int size) {
     return minBeaufort;
 }
 
-// ===== Задача 9.3 =====
 int analyzeBinary(int N) {
     bitset<32> bits(N);
     return ((N >> 9) & 1) ? 32 - bits.count() : bits.count();
 }
 
-// ===== Задача 9.4 =====
 void s_calculation() {
     cout << "Виклик функції s_calculation()" << endl;
 }
