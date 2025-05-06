@@ -31,7 +31,7 @@ int getBeaufortScale(double wind) {
     return 12;
 }
 
-// ===== Задача 9.2 =====
+
 int getMinBeaufortScale(const double windSpeeds[], int size) {
     int minBeaufort = 12;
     for (int i = 0; i < size; ++i) {
